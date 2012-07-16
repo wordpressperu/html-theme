@@ -68,7 +68,7 @@ header {
 .article-list-content h1 {
   display: block;
   width: 380px;
-  height: 80px;
+  height: 85px;
   margin-bottom: 5px;
 }
 .article-list-content h1 a {
@@ -79,7 +79,7 @@ header {
   font-weight: normal;
 }
 .article-list-info {
-  height: 25px;
+  height: 20px;
   margin-bottom: 5px;
   color: #424242;
 }
@@ -95,17 +95,20 @@ header {
   height: 25px;
 }
 #bannerbox {
-  padding: 5px;
   width: 300px;
-  height: 250px;
+  margin-bottom: 10px;
 }
-
+#fbsidebar {
+  width: 300px;
+}
 section {
   float: left;
 }
 aside {
   float: left;
   background: white;
+  padding: 5px;
+  width: 300px;
 }
 footer, footer a {
   text-align: center;
@@ -115,4 +118,32 @@ footer, footer a {
 footer a {
   color: #028DB9;
   text-decoration: none;
+}
+/* Single */
+.article-single h1 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 32px;
+  color: #028DB9;
+  font-weight: normal;
+}
+.article-single-info {
+  color: #424242;
+}
+.article-single-info, .article-single-info a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.article-single-info a {
+  color: #028DB9;
+}
+
+.article-single p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+.article-single h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
