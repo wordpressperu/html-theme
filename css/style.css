@@ -1,12 +1,13 @@
 body {
-  background: url(../img/bg.png);
-  background-repeat: repeat-x;
+  background: url(../img/bgblue.jpg) repeat-x center -60px;
+  
 }
+/* Header */
 header {
   width: 100%;
   background: #E0F5FA;
   height: 60px;
-  margin-bottom: 10px;
+  padding: 10px 0;
 }
 #logo {
   margin-top: 5px;
@@ -23,6 +24,7 @@ header {
   background: url(../img/logo.png) no-repeat;
 }
 #menu ul {
+  float:right;
   list-style: none;
   margin-top: 30px;
 }
@@ -37,20 +39,63 @@ header {
   text-decoration: none;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, .8);
 }
+/* Featured */
 #featured {
   height: 260px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 #featured1, #featured2, #featured3 {
   float: left;
 }
+.feat{ 
+  overflow: hidden;
+  position: 
+  relative;
+  -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+}
+
+.feat h2{
+  font:400 16px 'Droid Sans', Tahoma;
+  background:rgba(70,150,183,.9);
+  color:#fff;
+  position: absolute;
+  bottom:0;
+  padding:10px;
+  width:auto;
+  z-index:2;
+}
+.feat img{
+  -webkit-transition: all 0.7s ease-in-out;
+   -moz-transition: all 0.7s ease-in-out;
+   -o-transition: all 0.7s ease-in-out;
+   -ms-transition: all 0.7s ease-in-out;
+   transition: all 0.7s ease-in-out;
+}
+
+.feat:hover h2{
+  text-decoration:underline;
+}
+.feat:hover img{
+  -webkit-transform:scale(2);
+  -moz-transform:scale(2);
+  -o-transform:scale(2);
+  -ms-transform:scale(2);
+  transform:scale(2);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity:.7;
+}
+/* Articles */
 .article-list {
   display: block;
   width: 630px;
   height: 140px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
   background: white;
 }
@@ -141,7 +186,8 @@ footer a {
 .article-single p {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  padding: 5px 0px;
+  padding: 10px 0px;
+
 }
 .article-single h2 {
   font-family: 'Open Sans', sans-serif;
